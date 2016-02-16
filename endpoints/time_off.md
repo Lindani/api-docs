@@ -42,13 +42,13 @@
 Key | Type | Description
 --- | --- | --- | ---
 resource_ids[]| array of intergers | The resource ids of the resources
-creator_id | | 
+creator_id | integer | Unique identifier of the Creator this Downtime is for. (Can be `null`)
 from | string | Set a start_date for a range Time Offs
 end | string | Set an end_date for a range of Time Offs
-start_time | integer | Start time in minutes from midnight for this Downtime Duration
-end_time | integer | End time in minutes from midnight for this Downtime Duration
-details | string | 
-downtime_type_id | integer | 
+start_time | integer | Start time in minutes from midnight for this Downtime Duration (Can't be null)
+end_time | integer | End time in minutes from midnight for this Downtime Duration (Can't be null)
+details | string | Optional plain text details for the dowtime.
+downtime_type_id | integer | Unique identifier of the Downtime Type this Downtime is for. (Can be `null`)
 
 
 
