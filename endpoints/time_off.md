@@ -7,8 +7,13 @@
 
 Parameter | Default | Description
 --- | --- | --- | ---
-from | | set a start_date for a range Time Offs
-end | | set an end_date for a range of Time Offs
+ resource_ids| | | |
+from | | Set a start_date for a range Time Offs
+end | | Set an end_date for a range of Time Offs
+start_time | | Set a start_time 
+end_time | | Set an end_time
+
+
 ## Get a Specific Downtime
 
 ## Create a Downtime
