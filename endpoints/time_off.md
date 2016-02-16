@@ -19,13 +19,13 @@
 	{
 		"account_id": 122,
 		"created_at": "2016-02-16T12:55:19.072Z",
-		"creator_id": 146,
+		"creator_id": 450,
 		"deleted": false,
 		"details": "Christmas Eve",
-		"downtime_type_id": 1137,
+		"downtime_type_id": 444,
 		"end_time": 1440,
 		"from": "2016-12-25",
-		"id": 1871,
+		"id": 3534,
 		"leave": null,
 		"resource_ids": {
 			"0": "1386"
