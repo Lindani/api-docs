@@ -2,6 +2,8 @@
 
 ## Get Downtimes
 
+* `GET /v1/:subdomain/downtimes` returns an `Array` of **Downtimes**.
+
 ### Query String Parameters
 
 
@@ -53,6 +55,14 @@ downtime_type_id | integer | Unique identifier of the Downtime Type this Downtim
 
 
 ## Update a Downtime
+* `PUT /v1/:subdomain/downtimes/5` will update the Downtime from the parameters passed and return
+the JSON representation of the updated Downtime. If the user does not have access to update
+the Downtime, you'll see `403 Forbidden`.
+
 ## Delete a Downtime
+
+* `DELETE /v1/:subdomain/downtimes/5` will delete the Downtime specified and return `204 No Content`
+if that was successful. If the user does not have access to delete the Downtime, you'll see `403 Forbidden`.
+
 
 ## Get Downtime Types
