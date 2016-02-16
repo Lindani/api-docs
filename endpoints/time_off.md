@@ -38,15 +38,18 @@
 	}
 ]
 
-
 ```
 Key | Type | Description
 --- | --- | --- | ---
-resource_ids[]| integer | Array of intergers |
+resource_ids[]| array of intergers | The resource ids of the resources
+creator_id | | 
 from | string | Set a start_date for a range Time Offs
 end | string | Set an end_date for a range of Time Offs
-start_time | integer | Set a start_time for a Time off
-end_time | integer | Set an end_time for a Time Off
+start_time | integer | Start time in minutes from midnight for this Downtime Duration
+end_time | integer | End time in minutes from midnight for this Downtime Duration
+details | string | 
+downtime_type_id | integer | 
+
 
 
 ## Update a Downtime
