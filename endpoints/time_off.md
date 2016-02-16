@@ -42,7 +42,7 @@
 ```
 Key | Type | Description
 --- | --- | --- | ---
-resource_ids[]| integer | |Array of intergers |
+resource_ids[]| integer | Array of intergers |
 from | string | Set a start_date for a range Time Offs
 end | string | Set an end_date for a range of Time Offs
 start_time | integer | Set a start_time for a Time off
