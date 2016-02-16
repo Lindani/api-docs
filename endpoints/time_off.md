@@ -53,11 +53,11 @@ details | string | Optional plain text details for the dowtime.
 downtime_type_id | integer | Unique identifier of the Downtime Type this Downtime is for. (Can be `null`)
 
 
-
 ## Update a Downtime
 * `PUT /v1/:subdomain/downtimes/5` will update the Downtime from the parameters passed and return
 the JSON representation of the updated Downtime. If the user does not have access to update
 the Downtime, you'll see `403 Forbidden`.
+
 
 ## Delete a Downtime
 
@@ -66,3 +66,20 @@ if that was successful. If the user does not have access to delete the Downtime,
 
 
 ## Get Downtime Types
+
+* `GET /v1/:subdomain/downtimes` returns an `Array` of **Downtimes**.
+
+### Default Downtime response
+
+```json
+[
+	{
+	  "id":1555,
+	  "name":"Compassionate leave",
+	  "account_id":348,
+	  "created_at":"2016-02-02T11:17:45.000Z",
+	  "updated_at":"2016-02-02T11:17:45.000Z",
+	  "default":true
+	}
+]
+
