@@ -4,19 +4,13 @@
 
 ### Query String Parameters
 
-Parameter | Default | Description
---- | --- | --- | ---
- resource_ids| | | |
-from | | Set a start_date for a range Time Offs
-end | | Set an end_date for a range of Time Offs
-start_time | | Set a start_time 
-end_time | | Set an end_time
 
 
 ## Get a Specific Downtime
 
 ## Create a Downtime
-**Example**
+
+* `POST /v1/:subdomain/downtimes` will create a new Downtime from the parameters passed.
 
 ### Response
 
@@ -43,7 +37,17 @@ end_time | | Set an end_time
 		"updated_at": "2016-02-16T12:55:19.072Z",
 	}
 ]
+
+
 ```
+Key | Type | Description
+--- | --- | --- | ---
+resource_ids[]| integer | |Array of intergers |
+from | string | Set a start_date for a range Time Offs
+end | string | Set an end_date for a range of Time Offs
+start_time | integer | Set a start_time for a Time off
+end_time | integer | Set an end_time for a Time Off
+
 
 ## Update a Downtime
 ## Delete a Downtime
