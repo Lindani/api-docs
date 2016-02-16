@@ -41,7 +41,7 @@
 ```
 Key | Type | Description
 --- | --- | --- | ---
-resource_ids[]| array of intergers | The resource ids of the resources
+resource_ids| array of intergers | The resource ids of the resources
 creator_id | integer | Unique identifier of the Creator this Downtime is for. (Can be `null`)
 from | string | Set a start_date for a range Time Offs
 end | string | Set an end_date for a range of Time Offs
