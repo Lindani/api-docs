@@ -2,7 +2,6 @@
 
 ## Get Downtimes
 
-###Query String Parameters
 ### Query String Parameters
 
 Parameter | Default | Description
