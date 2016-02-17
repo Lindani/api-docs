@@ -67,7 +67,7 @@ if that was successful. If the user does not have access to delete the Downtime,
 
 ## Get Downtime Types
 
-* `GET /v1/:subdomain/downtimes` returns an `Array` of **Downtimes**.
+* `GET /v1/:subdomain/downtime_types` returns an `Array` of **Downtimes**.
 
 ### Default Downtime response
 
