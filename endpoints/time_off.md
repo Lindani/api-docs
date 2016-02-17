@@ -15,9 +15,9 @@ to | | Set an end date range for downtimes
 **Example:**
 
 ```
-https://api.resourceguruapp.com/v1/example-corp/downtimes?from=2016-02-16&to=2016-03-03
+https://api.resourceguruapp.com/v1/example-corp/downtimes?from=2016-02-16&to=2016-02-22
 ```
-The above example will return the next Downtimes between `2016-02-16` and `2016-03-03`
+The above example will return the next Downtimes between `2016-02-16` and `2016-02-22`
 
 ### Response
 
