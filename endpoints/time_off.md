@@ -88,6 +88,24 @@ The above example will return the next Downtimes between `2016-02-16` and `2016-
 	}
 ]
 ```
+
+Key | Type | Description
+--- | --- | ---
+client_id | integer | Unique identifier of the Client this Booking is for. (Can be `null`)
+created_at | string | Booking creation date and time.
+creator_id | array of intergers | The resource ids of the resources
+deleted | boolean | Downtime has changed recently.
+details | string | Extra details about this Downtime.
+downtime_type_id | integer | Unique identifier of the Downtime Type this Downtime is for. (Can be `null`)
+end_time | integer | End time in minutes from midnight for this Downtime Duration (Can't be null)
+from | string | Set a start_date for a range Time Offs
+id | integer | Unique identifier for a Downtime.
+resource_ids| array of intergers | The resource ids of the resources
+start_time | integer | Start time in minutes from midnight for this Downtime Duration (Can't be null)
+to | string | Set an end_date for a range of Time Offs
+updated_at | string | Last updated date and time.
+
+
 ## Get a Specific Downtime
 
 
@@ -127,7 +145,7 @@ Key | Type | Description
 resource_ids| array of intergers | The resource ids of the resources
 creator_id | integer | Unique identifier of the Creator this Downtime is for. (Can be `null`)
 from | string | Set a start_date for a range Time Offs
-end | string | Set an end_date for a range of Time Offs
+to | string | Set an end_date for a range of Time Offs
 start_time | integer | Start time in minutes from midnight for this Downtime Duration (Can't be null)
 end_time | integer | End time in minutes from midnight for this Downtime Duration (Can't be null)
 details | string | Optional plain text details for the dowtime.
