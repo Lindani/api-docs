@@ -45,6 +45,27 @@ The above example will return the next Downtimes between `2016-02-16` and `2016-
 	},
 	{
 		"account_id": 122,		
+		"created_at": "2016-02-04T09:48:24.000Z"
+		"creator_id": 234,		
+		"deleted": false,		
+		"details": "Uhm",		
+		"downtime_type_id": null,		
+		"end_time": 1440,		
+		"from": "2016-02-22",		
+		"id": 367,		
+		"leave": null,		
+		"resource_ids": {
+			"0": 121
+		},
+		"start_time": 0,		
+		"state": "Approved",		
+		"timezone": null,	
+		"to": "2016-02-22",	
+		"updated_at": "2016-02-12T11:46:54.000Z"
+	}
+
+	{
+		"account_id": 331,		
 		"created_at": "2015-12-17T13:00:40.000Z",		
 		"creator_id": 137,		
 		"deleted": false,		
