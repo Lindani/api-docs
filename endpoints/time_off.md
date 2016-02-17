@@ -103,8 +103,9 @@ id | integer | Unique identifier for a Downtime.
 resource_ids| array of intergers | The resource ids of the resources
 start_time | integer | Start time in minutes from midnight for this Downtime Duration (Can't be null)
 state | string | Status details about the Downtime.
+timezone | Central Time (US & Canada) | Timezone for Downtime
 to | string | Set an end_date for a range of Time Offs
-updated_at | string | Last updated date and time.
+updated_at | String | Last updated date and time.
 
 
 ## Get a Specific Downtime
