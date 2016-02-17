@@ -45,7 +45,7 @@ The above example will return the next Downtimes between `2016-02-16` and `2016-
 	},
 	{
 		"account_id": 122,		
-		"created_at": "2016-02-04T09:48:24.000Z"
+		"created_at": "2016-02-04T09:48:24.000Z",
 		"creator_id": 234,		
 		"deleted": false,		
 		"details": "Uhm",		
