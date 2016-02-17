@@ -8,11 +8,15 @@
 
 Parameter | Default | Description
 --- | --- | --- | ---
-resource_id | | Limit the number of results 
+resource_ids | | Limit the number of results 
 from | | Set a start date range for downtimes
 to | | Set an end date range for downtimes
 
+**Example:**
 
+```
+https://api.resourceguruapp.com/v1/example-corp/bookings?start_date=2013-01-01&end_date=2013-04-10
+```
 ## Get a Specific Downtime
 
 ## Create a Downtime
