@@ -110,6 +110,7 @@ updated_at | String | Last updated date and time.
 
 ## Get a Specific Downtime
 
+*  `GET /v1/:subdomain/downtimes/id` returns a specific Downtime.
 
 ## Create a Downtime
 
