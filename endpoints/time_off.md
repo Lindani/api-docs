@@ -42,6 +42,7 @@ The above example will return the next Downtimes between `2016-02-16` and `2016-
 		"timezone": null,
 		"to": "2016-12-25",
 		"updated_at": "2016-02-16T12:55:19.072Z",
+	}
 ]
 ```
 ## Get a Specific Downtime
