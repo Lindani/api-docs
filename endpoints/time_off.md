@@ -21,6 +21,10 @@ https://api.resourceguruapp.com/v1/example-corp/downtimes?start_date=2013-01-01&
 
 ## Create a Downtime
 
+The above example will return the next Boookings between `2013-01-01` and `2013-04-10`
+
+### Response
+
 * `POST /v1/:subdomain/downtimes` will create a new Downtime from the parameters passed.
 
 ### Response
