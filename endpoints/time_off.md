@@ -52,7 +52,11 @@ The above example will return the next Downtimes between `2016-02-16` and `2016-
 		"from": "2016-02-22",		
 		"id": 963,		
 		"leave": null,		
-		"resource_ids": Array[1],		"start_time": 0,		"state": "Approved",		
+		"resource_ids": {
+			"0": 1884
+		},
+		"start_time": 0,		
+		"state": "Approved",		
 		"timezone": null,	
 		"to": "2016-02-22",	
 		"updated_at": "2015-12-17T13:02:01.000Z,	
