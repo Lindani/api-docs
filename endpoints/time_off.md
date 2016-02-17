@@ -102,6 +102,7 @@ from | string | Set a start_date for a range Time Offs
 id | integer | Unique identifier for a Downtime.
 resource_ids| array of intergers | The resource ids of the resources
 start_time | integer | Start time in minutes from midnight for this Downtime Duration (Can't be null)
+state | string | Status details about the Downtime.
 to | string | Set an end_date for a range of Time Offs
 updated_at | string | Last updated date and time.
 
