@@ -6,6 +6,12 @@
 
 ### Query String Parameters
 
+Parameter | Default | Description
+--- | --- | --- | ---
+
+resource_id |  | Limit the number of results 
+from | | Set a start date range for downtimes
+to |  | Set an end date range for downtimes
 
 
 ## Get a Specific Downtime
