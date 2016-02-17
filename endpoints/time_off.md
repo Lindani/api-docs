@@ -9,6 +9,8 @@
 Parameter | Default | Description
 --- | --- | --- | ---
 resource_ids | | Limit the number of results 
+limit | 50 | Limit the number of results returned for pagination. To retrieve all the results use `0`.
+offset | 0 | Offset the results for pagination, starting from the given record number.
 from | | Set a start date range for downtimes
 to | | Set an end date range for downtimes
 
