@@ -24,7 +24,7 @@ The above example will return the next Downtimes between `2016-02-16` and `2016-
 ```json
 [
 	{
-		"account_id": 122,
+		"account_id": 168,
 		"created_at": "2016-02-16T12:55:19.072Z",
 		"creator_id": 450,
 		"deleted": false,
@@ -35,7 +35,7 @@ The above example will return the next Downtimes between `2016-02-16` and `2016-
 		"id": 3534,
 		"leave": null,
 		"resource_ids": {
-			"0": "1386"
+			"0": "565"
 		},
 		"start_time": 0,
 		"state": "Approved",
@@ -50,10 +50,10 @@ The above example will return the next Downtimes between `2016-02-16` and `2016-
 		"deleted": false,		
 		"details": "",		"downtime_type_id": null,		"end_time": 1440,		
 		"from": "2016-02-22",		
-		"id": 963,		
+		"id": 434,		
 		"leave": null,		
 		"resource_ids": {
-			"0": 1884
+			"0": 334
 		},
 		"start_time": 0,		
 		"state": "Approved",		
