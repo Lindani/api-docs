@@ -44,23 +44,7 @@ The above example will return the next Downtimes between `2016-02-16` and `2016-
 		"updated_at": "2016-02-16T12:55:19.072Z",
 	},
 	{
-		"account_id": 122
-		"created_at": "2015-12-17T13:00:40.000Z"
-		"creator"_id: 137
-		"deleted": false
-		"details": ""
-		"downtime_type_id": null
-		"end_time": 1440
-		"from": "2016-02-22"
-		"id": 963
-		"leave": null
-		"resource_ids": Array[1]
-		"start_time": 0
-		"state": "Approved"
-		"timezone": null
-		"to": "2016-02-22"
-		"updated_at": "2015-12-17T13:02:01.000Z
-	}
+		"account_id": 122,		"created_at": "2015-12-17T13:00:40.000Z",		"creator"_id: 137,		"deleted": false,		"details": "",		"downtime_type_id": null,		"end_time": 1440,		"from": "2016-02-22",		"id": 963,		"leave": null,		"resource_ids": Array[1],		"start_time": 0,		"state": "Approved",		"timezone": null,		"to": "2016-02-22",		"updated_at": "2015-12-17T13:02:01.000Z,	}
 ]
 ```
 ## Get a Specific Downtime
