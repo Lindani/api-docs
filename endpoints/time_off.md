@@ -15,17 +15,33 @@ to | | Set an end date range for downtimes
 **Example:**
 
 ```
-https://api.resourceguruapp.com/v1/example-corp/downtimes?start_date=2013-01-01&end_date=2013-04-10
+https://api.resourceguruapp.com/v1/example-corp/downtimes?from=2016-02-16&to=2016-03-03
 ```
-The above example will return the next Downtimes between `2013-01-01` and `2013-04-10`
+The above example will return the next Downtimes between `2016-02-16` and `2016-03-03`
 
 ### Response
 
 ```json
 [
 	{
-		
-	}
+		"account_id": 122,
+		"created_at": "2016-02-16T12:55:19.072Z",
+		"creator_id": 450,
+		"deleted": false,
+		"details": "Christmas Eve",
+		"downtime_type_id": 444,
+		"end_time": 1440,
+		"from": "2016-12-25",
+		"id": 3534,
+		"leave": null,
+		"resource_ids": {
+			"0": "1386"
+		},
+		"start_time": 0,
+		"state": "Approved",
+		"timezone": null,
+		"to": "2016-12-25",
+		"updated_at": "2016-02-16T12:55:19.072Z",
 ]
 ```
 ## Get a Specific Downtime
