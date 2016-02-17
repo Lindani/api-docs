@@ -91,8 +91,8 @@ The above example will return the next Downtimes between `2016-02-16` and `2016-
 
 Key | Type | Description
 --- | --- | ---
-client_id | integer | Unique identifier of the Client this Booking is for. (Can be `null`)
-created_at | string | Booking creation date and time.
+client_id | integer | Unique identifier of the Client this Downtime is for. (Can be `null`)
+created_at | string | Downtime creation date and time.
 creator_id | array of intergers | The resource ids of the resources
 deleted | boolean | Downtime has changed recently.
 details | string | Extra details about this Downtime.
