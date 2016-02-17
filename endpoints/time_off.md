@@ -15,7 +15,7 @@ to | | Set an end date range for downtimes
 **Example:**
 
 ```
-https://api.resourceguruapp.com/v1/example-corp/bookings?start_date=2013-01-01&end_date=2013-04-10
+https://api.resourceguruapp.com/v1/example-corp/downtimes?start_date=2013-01-01&end_date=2013-04-10
 ```
 ## Get a Specific Downtime
 
