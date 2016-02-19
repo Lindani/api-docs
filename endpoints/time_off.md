@@ -19,7 +19,7 @@ to | | Set an end date range for downtimes
 ```
 https://api.resourceguruapp.com/v1/example-corp/downtimes?resource_ids[]=565&resource_ids[]=334&from=2016-02-16&to=2016-02-22
 ```
-The above example will return the next Downtimes between `2016-02-16` and `2016-02-22` where resource_ids[]=565 and resource_ids[]=334
+The above example will return the next Downtimes between `2016-02-16` and `2016-02-22` where resource_ids[]=565 and resource_ids[]=334.
 
 ### Response
 
@@ -174,12 +174,12 @@ if that was successful. If the user does not have access to delete the Downtime,
 ```json
 [
 	{
-	  "id":1555,
-	  "name":"Compassionate leave",
-	  "account_id":348,
-	  "created_at":"2016-02-02T11:17:45.000Z",
-	  "updated_at":"2016-02-02T11:17:45.000Z",
-	  "default":true
+	  "id": 1555,
+	  "name": "Compassionate leave",
+	  "account_id": 348,
+	  "created_at": "2016-02-02T11:17:45.000Z",
+	  "updated_at": "2016-02-02T11:17:45.000Z",
+	  "default": true
 	}
 ]
 
