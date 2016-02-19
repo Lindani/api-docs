@@ -8,7 +8,7 @@
 
 Parameter | Default | Description
 --- | --- | --- | ---
-resource_ids | | Limit the number of results 
+resource_ids | | Only retrieve downtimes for the given resources 
 limit | 50 | Limit the number of results returned for pagination. To retrieve all the results use `0`.
 offset | 0 | Offset the results for pagination, starting from the given record number.
 from | | Set a start date range for downtimes
@@ -17,9 +17,9 @@ to | | Set an end date range for downtimes
 **Example:**
 
 ```
-https://api.resourceguruapp.com/v1/example-corp/downtimes?resource_ids[]=575&resource_ids[]=575&from=2016-02-16&to=2016-02-22
+https://api.resourceguruapp.com/v1/example-corp/downtimes?resource_ids[]=565&resource_ids[]=334&from=2016-02-16&to=2016-02-22
 ```
-The above example will return the next Downtimes between `2016-02-16` and `2016-02-22`
+The above example will return the next Downtimes between `2016-02-16` and `2016-02-22` where resource_ids[]=565 and resource_ids[]=334
 
 ### Response
 
