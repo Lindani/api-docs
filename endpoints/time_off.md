@@ -17,27 +17,27 @@ to | | Set an end date range for downtimes
 **Example:**
 
 ```
-https://api.resourceguruapp.com/v1/example-corp/downtimes?resource_ids[]=565&resource_ids[]=334&from=2016-02-16&to=2016-02-22
+https://api.resourceguruapp.com/v1/example-corp/downtimes?resource_ids[]=123&resource_ids[]=122&from=2016-02-16&to=2016-02-22
 ```
-The above example will return the next Downtimes between `2016-02-16` and `2016-02-22` where resource_ids[]=565 and resource_ids[]=334.
+The above example will return the next Downtimes between `2016-02-16` and `2016-02-22` where the resource ids are 123 and 122.
 
 ### Response
 
 ```json
 [
 	{
-		"account_id": 168,
+		"account_id": 1,
 		"created_at": "2016-02-16T12:55:19.072Z",
-		"creator_id": 450,
+		"creator_id": 2,
 		"deleted": false,
 		"details": "Christmas Eve",
-		"downtime_type_id": 444,
+		"downtime_type_id": 3,
 		"end_time": 1440,
 		"from": "2016-12-25",
-		"id": 3534,
+		"id": 123,
 		"leave": null,
 		"resource_ids": {
-			"0": "565"
+			"0": "123"
 		},
 		"start_time": 0,
 		"state": "Approved",
@@ -46,18 +46,18 @@ The above example will return the next Downtimes between `2016-02-16` and `2016-
 		"updated_at": "2016-02-16T12:55:19.072Z",
 	},
 	{
-		"account_id": 122,		
+		"account_id": 1,		
 		"created_at": "2016-02-04T09:48:24.000Z",
-		"creator_id": 234,		
+		"creator_id": 2,		
 		"deleted": false,		
-		"details": "Uhm",		
+		"details": "Details",		
 		"downtime_type_id": null,		
 		"end_time": 1440,		
 		"from": "2016-02-22",		
-		"id": 367,		
+		"id": 124,		
 		"leave": null,		
 		"resource_ids": {
-			"0": 121
+			"0": 123
 		},
 		"start_time": 0,		
 		"state": "Approved",		
@@ -67,18 +67,18 @@ The above example will return the next Downtimes between `2016-02-16` and `2016-
 	}
 
 	{
-		"account_id": 331,		
+		"account_id": 1,		
 		"created_at": "2015-12-17T13:00:40.000Z",		
-		"creator_id": 137,		
+		"creator_id": 2,		
 		"deleted": false,		
 		"details": "",		
 		"downtime_type_id": null,		
 		"end_time": 1440,		
 		"from": "2016-02-22",		
-		"id": 434,		
+		"id": 125,		
 		"leave": null,		
 		"resource_ids": {
-			"0": 334
+			"0": 122
 		},
 		"start_time": 0,		
 		"state": "Approved",		
@@ -91,20 +91,19 @@ The above example will return the next Downtimes between `2016-02-16` and `2016-
 
 Key | Type | Description
 --- | --- | ---
-client_id | integer | Unique identifier of the Client this Downtime is for. (Can be `null`)
 created_at | string | Downtime creation date and time.
-creator_id | array of intergers | The resource ids of the resources
-deleted | boolean | Downtime has changed recently.
+creator_id | integer | Unique identifier of the User this Downtime was created by.
+deleted | boolean | Denoted whether the downtime has been deleted.
 details | string | Extra details about this Downtime.
 downtime_type_id | integer | Unique identifier of the Downtime Type this Downtime is for. (Can be `null`)
-end_time | integer | End time in minutes from midnight for this Downtime Duration (Can't be null)
-from | string | Set a start_date for a range Time Offs
+end_time | integer | End time in minutes from midnight for this Downtime duration (Can't be null)
+from | string | Start date for the downtime.
 id | integer | Unique identifier for a Downtime.
-resource_ids| array of intergers | The resource ids of the resources
-start_time | integer | Start time in minutes from midnight for this Downtime Duration (Can't be null)
+resource_ids| array of intergers | Unique identifiers of the Resources this Downtime is for.
+start_time | integer | Start time in minutes from midnight for this Downtime duration (Can't be null)
 state | string | Status details about the Downtime.
-timezone | Central Time (US & Canada) | Timezone for Downtime
-to | string | Set an end_date for a range of Time Offs
+timezone | string | Specified time zone for the downtime.
+to | string | End date for the downtime.
 updated_at | String | Last updated date and time.
 
 
@@ -121,22 +120,22 @@ updated_at | String | Last updated date and time.
 ```json
 [
 	{
-		"account_id": 122,
+		"account_id": 1,
 		"created_at": "2016-02-16T12:55:19.072Z",
-		"creator_id": 450,
+		"creator_id": 2,
 		"deleted": false,
 		"details": "Christmas Eve",
 		"downtime_type_id": 444,
 		"end_time": 1440,
 		"from": "2016-12-25",
-		"id": 3534,
+		"id": 123,
 		"leave": null,
 		"resource_ids": {
-			"0": "1386"
+			"0": "122"
 		},
 		"start_time": 0,
 		"state": "Approved",
-		"timezone": null,
+		"timezone": "London",
 		"to": "2016-12-25",
 		"updated_at": "2016-02-16T12:55:19.072Z",
 	}
@@ -145,12 +144,12 @@ updated_at | String | Last updated date and time.
 ```
 Key | Type | Description
 --- | --- | --- | ---
-resource_ids| array of intergers | The resource ids of the resources
-creator_id | integer | Unique identifier of the Creator this Downtime is for. (Can be `null`)
-from | string | Set a start_date for a range Time Offs
-to | string | Set an end_date for a range of Time Offs
-start_time | integer | Start time in minutes from midnight for this Downtime Duration (Can't be null)
-end_time | integer | End time in minutes from midnight for this Downtime Duration (Can't be null)
+resource_ids| array of intergers | The resources that the downtime is being created for.
+creator_id | integer | Unique identifier of the User this Downtime is for.
+from | string | The ISO 8601 formatted first date for the downtime.
+to | string | The ISO 8601 formatted last date for the downtime.
+start_time | integer | Start time in minutes from midnight for this Downtime duration (Can't be null)
+end_time | integer | End time in minutes from midnight for this Downtime duration (Can't be null)
 details | string | Optional plain text details for the dowtime.
 downtime_type_id | integer | Unique identifier of the Downtime Type this Downtime is for. (Can be `null`)
 
@@ -183,3 +182,12 @@ if that was successful. If the user does not have access to delete the Downtime,
 	}
 ]
 
+```
+Key | Type | Description
+--- | --- | --- | ---
+id | integer | Unique identifier of the Downtime type.
+name | string | Name of this Downtime type.
+account_id | integer | Unique identifier of the Account to which this Downtime type belongs.
+created_at | string | Downtime type creation date and time.
+updated_at | string | Last updated date and time.
+default | boolean | Denotes whether the Downtime type is a default type.

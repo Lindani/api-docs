@@ -53,7 +53,7 @@ You can perform up to 33 requests per 10 second period on a registered applicati
 
 * [Accounts](./endpoints/accounts.md)
 * [Bookings](./endpoints/bookings.md)
-* [Time-offs](./endpoints/time_off.md)
+* [Time Off](./endpoints/time_off.md)
 * [Clients](./endpoints/clients.md)
 * [Me](./endpoints/me.md)
 * [Projects](./endpoints/projects.md)
