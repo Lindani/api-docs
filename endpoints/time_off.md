@@ -8,11 +8,11 @@
 
 Parameter | Default | Description
 --- | --- | --- | ---
-resource_ids | | Only retrieve downtimes for the given resources 
+resource_ids | | Only retrieve Downtimes for the given resources 
 limit | 50 | Limit the number of results returned for pagination. To retrieve all the results use `0`.
 offset | 0 | Offset the results for pagination, starting from the given record number.
-from | | Set a start date range for downtimes
-to | | Set an end date range for downtimes
+from | | Set a start date range for Downtimes.
+to | | Set an end date range for Downtimes.
 
 **Example:**
 
@@ -93,17 +93,17 @@ Key | Type | Description
 --- | --- | ---
 created_at | string | Downtime creation date and time.
 creator_id | integer | Unique identifier of the User this Downtime was created by.
-deleted | boolean | Denoted whether the downtime has been deleted.
+deleted | boolean | Denoted whether the Downtime has been deleted.
 details | string | Extra details about this Downtime.
 downtime_type_id | integer | Unique identifier of the Downtime Type this Downtime is for. (Can be `null`)
 end_time | integer | End time in minutes from midnight for this Downtime duration (Can't be null)
-from | string | Start date for the downtime.
+from | string | Start date for the Downtime.
 id | integer | Unique identifier for a Downtime.
 resource_ids| array of intergers | Unique identifiers of the Resources this Downtime is for.
 start_time | integer | Start time in minutes from midnight for this Downtime duration (Can't be null)
 state | string | Status details about the Downtime.
-timezone | string | Specified time zone for the downtime.
-to | string | End date for the downtime.
+timezone | string | Specified time zone for the Downtime.
+to | string | End date for the Downtime.
 updated_at | String | Last updated date and time.
 
 
@@ -144,13 +144,13 @@ updated_at | String | Last updated date and time.
 ```
 Key | Type | Description
 --- | --- | --- | ---
-resource_ids| array of intergers | The resources that the downtime is being created for.
+resource_ids| array of intergers | The resources that the Downtime is being created for.
 creator_id | integer | Unique identifier of the User this Downtime is for.
-from | string | The ISO 8601 formatted first date for the downtime.
-to | string | The ISO 8601 formatted last date for the downtime.
+from | string | The ISO 8601 formatted first date for the Downtime.
+to | string | The ISO 8601 formatted last date for the Downtime.
 start_time | integer | Start time in minutes from midnight for this Downtime duration (Can't be null)
 end_time | integer | End time in minutes from midnight for this Downtime duration (Can't be null)
-details | string | Optional plain text details for the dowtime.
+details | string | Optional plain text details for the Downtime.
 downtime_type_id | integer | Unique identifier of the Downtime Type this Downtime is for. (Can be `null`)
 
 
