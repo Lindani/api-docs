@@ -152,6 +152,12 @@ start_time | integer | Start time in minutes from midnight for this Downtime dur
 end_time | integer | End time in minutes from midnight for this Downtime duration (Can't be null)
 details | string | Optional plain text details for the Downtime.
 downtime_type_id | integer | Unique identifier of the Downtime Type this Downtime is for. (Can be `null`)
+timezone | string | String denoting the time zone for which the Downtime is created for. [(Details)](#timezones)
+
+#### Time zones
+
+When creating a new Downtime, a time zone may be specified if the Downtime is being created for multiple resources. If left blank, it will default to the time zone of each resource.
+The time zone values are based off of Ruby On Rails's ActiveSupport::TimeZone's key mappings. For example, to create a Downtime for (GMT +0) London, the value would be "London". See http://api.rubyonrails.org/classes/ActiveSupport/TimeZone.html - Constants.
 
 
 ## Update a Downtime
